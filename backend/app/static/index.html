@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb"><title>SentinelAI · Security operations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="app" class="shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="brand-mark">S</div><div><strong>sentinel<span>ai</span></strong><small>APPLICATION SECURITY</small></div><button class="icon-btn collapse" id="collapse" title="Collapse sidebar">‹</button></div>
+      <div class="project-select"><span class="project-dot"></span><div><b>TravelCore</b><small>Production preview</small></div><span class="chevron">⌄</span></div>
+      <div class="nav-label">WORKSPACE</div><nav id="nav-main">
+        <button data-page="overview" class="nav-item active"><i>◫</i><span>Overview</span></button>
+        <button data-page="monitoring" class="nav-item"><i>◉</i><span>Live monitoring</span><b class="live-dot"></b></button>
+        <button data-page="inventory" class="nav-item"><i>▤</i><span>API inventory</span></button>
+        <button data-page="scans" class="nav-item"><i>⌕</i><span>Security scans</span></button>
+        <button data-page="activity" class="nav-item"><i>☷</i><span>Agent activity</span></button>
+        <button data-page="findings" class="nav-item"><i>⛨</i><span>Vulnerability findings</span><b class="nav-count" id="nav-count">0</b></button>
+        <button data-page="chains" class="nav-item"><i>⌘</i><span>Attack chains</span></button>
+        <button data-page="authorization" class="nav-item"><i>⊞</i><span>Authorization intel</span></button>
+        <button data-page="impact" class="nav-item"><i>⌁</i><span>Change impact</span></button>
+        <button data-page="fixes" class="nav-item"><i>⌁</i><span>Fix suggestions</span></button>
+        <button data-page="retesting" class="nav-item"><i>↻</i><span>Retesting</span></button>
+      </nav>
+      <div class="nav-label spaced">DEMO ENVIRONMENT</div><nav>
+        <button data-page="demo" class="nav-item"><i>▣</i><span>Demo lab</span></button>
+        <button data-page="audit" class="nav-item"><i>▥</i><span>Audit logs</span></button>
+        <button data-page="settings" class="nav-item"><i>⚙</i><span>Settings</span></button>
+      </nav>
+      <div class="sidebar-bottom"><div class="agent-healthy"><span class="healthy-dot"></span><div><b>All systems healthy</b><small>Agent is standing by</small></div><span class="more">···</span></div><div class="profile"><div class="avatar" id="avatar">PV</div><div class="profile-copy"><b id="profile-name">Public preview</b><small id="profile-role">Read-only preview</small></div></div></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><button class="icon-btn mobile-menu" id="mobile-menu">☰</button><div class="crumb"><span>TravelCore</span><i>/</i><b id="page-crumb">Overview</b></div><div class="top-actions"><div class="backend-status"><span></span>Backend is ready · not hosted live yet</div><div class="health-pill"><span class="healthy-dot"></span>Application healthy</div><div class="agent-pill"><span class="agent-pulse"></span>Agent active</div><button class="icon-btn notification" id="notifications" title="Notifications">♧<span></span></button><div class="top-avatar" id="top-avatar">PS</div></div></header>
+      <section class="content" id="content"><div class="loading"><span class="spinner"></span>Loading workspace</div></section>
+      <footer>SentinelAI <span>·</span> Local controlled demo environment <span class="footer-safe">● Safety layer active</span></footer>
+    </main>
+  </div>
+  <div id="toast-area" class="toast-area"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
